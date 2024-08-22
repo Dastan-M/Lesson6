@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+  
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+button {
+  color: #E8E8E8;
+  border: none;
+  background-color: #222222;
+}
+header {
+  background: #222222;
+  padding: 20px 0;
+}
+.navigation__left {
+  display: flex;
+  gap: 41px;
+}
+.navigation__right {
+  display: flex;
+  gap: 33px;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F1E4E6;
+}
+.banner__rightSide {
+  margin-right: 0%;
+  border-left: 12px solid #F16D7F;
+}
+.highlight {
+  color: #F16D7F;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 65px 230px 96px ;
+}
+.FOR__WOMEN {
+  width: 360px;
+  height: 260px;
+  background-image: url(./img/FOR\ WOMEN.png);
+}
+.FOR__WOMEN__bgc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 22, 22, 0.70);
+}
+.FOR__MEN {
+  width: 360px;
+  height: 260px;
+  background-image: url(./img/FOR\ MAN.png);
+}
+.FOR__MEN__bgc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 22, 22, 0.70);
+}
+.FOR__KIDS {
+  width: 360px;
+  height: 260px;
+  background-image: url(./img/FOR\ KIDS.png);
+}
+.FOR__KIDS__bgc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 22, 22, 0.70);
+}
+.ACCESORIES {
+  width: 1140px;
+  height: 180px;
+  background-image: url(./img/ACCESORIES.png);
+}
+.ACCESORIES__bgc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 22, 22, 0.70);
+}
+h4 {
+  color: #F16D7F;
+  size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+h5 {
+  color: #FFFFFF;
+  size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.itemsHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 48px;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.cardText {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+ padding: 24px 29px 24px 16px;
+ background-color: #F8F8F8;
+}
+.description {
+  color: #5D5D5D;
+}
+.price {
+  color: #F16D7F;
+}
+.fotterBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FF6A6A;
+  color: #F26376;
+  background: #FFFFFF;
+  padding: 15px 40px;
+}
