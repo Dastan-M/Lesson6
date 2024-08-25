@@ -41,14 +41,29 @@ header {
 }
 .banner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: o 50px;
   background: #F1E4E6;
 }
+.banner img {
+  flex: 0 0 50%; 
+}
 .banner__rightSide {
-  margin-right: 0%;
+  flex: 0 0 50%;
+  text-align: left;
+  padding-left: 50px;
   border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+  margin: 138px 331px 381px 63px;
+}
+.banner__rightSide h1 {
+  font-size: 48px;
+  font-weight: 900
+}
+.banner__rightSide h3 {
+  font-size: 32px;
+  font-weight: 700
 }
 .highlight {
   color: #F16D7F;
@@ -157,4 +172,44 @@ h5 {
   color: #F26376;
   background: #FFFFFF;
   padding: 15px 40px;
+  margin: 48px auto 60px;
+}
+@media(min-width: 768px) and (max-width: 1140px) {
+  .container {
+    max-width: 768px;
+  }
+  .categories {
+    gap: 16px;
+    padding: 30px 20px;
+  }
+  .FOR__WOMEN {
+    width: 232px;
+    height: 167px;
+  }
+  .FOR__MEN {
+    width: 232px;
+    height: 167px;
+  }
+  .FOR__KIDS {
+    width: 232px;
+    height: 167px;
+  }
+  .ACCESORIES {
+    width: 735px;
+    height: 116px;
+  }
+  .itemsHeader{
+    gap: 3px;
+    padding: 72px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .fotterBtn {
+    padding: 15px 40px;
+    margin: 32px auto 70px;
+  }
 }
