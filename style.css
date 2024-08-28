@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  overflow-x: hidden;
 }
 body {
   scroll-behavior: smooth;
@@ -29,10 +30,12 @@ header {
 .navigation__left {
   display: flex;
   gap: 41px;
+  margin-left: 231px;
 }
 .navigation__right {
   display: flex;
   gap: 33px;
+  margin-right: 240px;
 }
 .navigation{
   display: flex;
@@ -131,12 +134,18 @@ h4 {
   size: 24px;
   line-height: 29px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h5 {
   color: #FFFFFF;
   size: 16px;
   line-height: 19px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .itemsHeader{
   display: flex;
@@ -175,6 +184,15 @@ h5 {
   margin: 48px auto 60px;
 }
 @media(min-width: 768px) and (max-width: 1140px) {
+  .navigation__left {
+    margin-left: 32px;
+  }
+  .navigation__right {
+    margin-right: 32px;
+  }
+  .banner__rightSide {
+    margin: 138px 33px 137px 39px;    
+  }
   .container {
     max-width: 768px;
   }
@@ -211,5 +229,60 @@ h5 {
   .fotterBtn {
     padding: 15px 40px;
     margin: 32px auto 70px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+  .man {
+    display: none;
+  }
+  .basket {
+    display: none;
+  }
+  .navigation__left {
+    margin-left: 16px;
+  }
+  .navigation__right {
+    margin-right: 16px;
+  }
+  .banner img {
+    display: none;
+  }
+  .banner__rightSide {
+    
+    margin: 148px auto;    
+  }
+  .banner__rightSide h1 {
+    font-size: 38px;
+    font-weight: 900
+  }
+  .banner__rightSide h3 {
+    font-size: 20px;
+    font-weight: 700
+  }
+  .categories {
+    gap: 32px;
+    padding: 64px 16px;
+  }
+  .ACCESORIES {
+    width: 360px;
+    height: 111px;
+    background-position: center;
+    background-size: cover;
+  }
+  .itemsHeader h2 {
+    font-size: 36px;
+  }
+  .itemsHeader p {
+    color: #9f9f9f;
+    font-size: 14px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
   }
 }
