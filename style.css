@@ -8,7 +8,6 @@
 body {
   scroll-behavior: smooth;
   font-family: "Lato", sans-serif;
-  
 }
 img {
   display: block;
@@ -36,6 +35,21 @@ header {
   display: flex;
   gap: 33px;
   margin-right: 240px;
+  position: relative;
+}
+.basket {
+  position: relative;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.badge {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  background-color: #F16D7F;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
 }
 .navigation{
   display: flex;
@@ -48,9 +62,35 @@ header {
   align-items: center;
   padding: o 50px;
   background: #F1E4E6;
+  position: relative;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 232px;
+  height: 634px;
+  background-color: #FFFFFF;
+}
+.menu p {
+  margin: 32px 144px 24px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+.menu h2 {
+  margin: 32px auto 24px 32px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #F16D7F;
+}
+.menu li a {
+  margin: 10px auto 11px 54px;
+  font-size: 14px;
+  line-height: 23px;
 }
 .banner img {
-  flex: 0 0 50%; 
+  flex: 0 0 50%;
 }
 .banner__rightSide {
   flex: 0 0 50%;
@@ -160,6 +200,51 @@ h5 {
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 }
+.card {
+  position: relative;
+  width: 360px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card:hover img {
+  opacity: 0.5;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: #3A3838DB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.card:hover .overlay {
+  opacity: 0.6;
+}
+.add-to-cart {
+  background-color: #3A3838DB;
+  border: 1px solid #FFFFFF;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.add-to-cart:hover {
+  background-color: #3A3838DB;
+}
+.add-to-cart img {
+  color: #FFFFFF;
+  width: 28px;
+  height: 28px;
+}
 .cardText {
  display: flex;
  flex-direction: column;
@@ -182,6 +267,124 @@ h5 {
   background: #FFFFFF;
   padding: 15px 40px;
   margin: 48px auto 60px;
+}
+.fotterBtn:hover {
+  background-color: #FF6A6A;
+  color: #FFFFFF;
+}
+.delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 100px 230px;
+  background: #222224;
+}
+.delivery__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 360px;
+  height: 134px;
+}
+.delivery__block img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: auto;
+}
+.delivery__h3 {
+  color: #FBFBFB;
+  margin-bottom: 15px;
+}
+.delivery__p {
+  color: #FBFBFB;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 327px;
+  padding: 230px 100px;  
+  background-image: url(./img/nature.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+.face {
+  width: 360px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.face img {
+  margin-bottom: 30px;
+}
+.face__p {
+  font-size: 20px;
+}
+.SUBSCRIBE {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+form {
+  padding-top: 22px;
+  display: flex;
+}
+input {
+  border-radius: 12% 0 0 12%;
+  height: 49px;
+  width: 256px;
+  background-color: #E1E1E1;
+  border: none;
+  padding-left: 30px;
+}
+.subscribe__btn {
+  border-radius: 0 12% 12% 0;
+  height: 49px;
+  width: 100px;
+  background-color: #F16D7F;
+}
+footer {
+  background: #222224;
+  padding: 30px 0;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 655px;
+}
+.footer__left {
+  width: 332px;
+  height: 19px;
+  color: #FBFBFB;
+  margin-left: 235px;
+}
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-right: 230px;
+}
+.footer__right a {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__right a:hover {
+  background-color: #FF6A6A;
+}
+.footer__right a:hover img {
+  filter: invert(1);
 }
 @media(min-width: 768px) and (max-width: 1140px) {
   .navigation__left {
@@ -251,8 +454,7 @@ h5 {
     display: none;
   }
   .banner__rightSide {
-    
-    margin: 148px auto;    
+    margin: 148px auto;
   }
   .banner__rightSide h1 {
     font-size: 38px;
