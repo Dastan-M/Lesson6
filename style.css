@@ -366,14 +366,14 @@ footer {
   width: 332px;
   height: 19px;
   color: #FBFBFB;
-  margin-left: 235px;
+  margin-left: auto;
 }
 .footer__right {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-right: 230px;
+  margin-right: auto;
 }
 .footer__right a {
   width: 32px;
