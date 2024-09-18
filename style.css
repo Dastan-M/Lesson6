@@ -89,6 +89,9 @@ header {
   font-size: 14px;
   line-height: 23px;
 }
+.hidden {
+  display: none;
+}
 .banner img {
   flex: 0 0 50%;
 }
@@ -305,7 +308,7 @@ h5 {
   justify-content: center;
   align-items: center;
   gap: 327px;
-  padding: 230px 100px;  
+  padding: 230px 100px;
   background-image: url(./img/nature.png);
   background-size: cover;
   background-position: center bottom;
@@ -394,7 +397,7 @@ footer {
     margin-right: 32px;
   }
   .banner__rightSide {
-    margin: 138px 33px 137px 39px;    
+    margin: 138px 33px 137px 39px;
   }
   .container {
     max-width: 768px;
@@ -432,6 +435,21 @@ footer {
   .fotterBtn {
     padding: 15px 40px;
     margin: 32px auto 70px;
+  }
+  .delivery {
+    flex-direction: column;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .footer {
+    gap: 305px;
+  }
+  .footer__left {
+    margin-left: 32px;
+  }
+  .footer__right {
+    margin-right: 32px;
   }
 }
 @media (max-width: 767px) {
@@ -486,5 +504,23 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 30px;
+  }
+  .delivery {
+    flex-direction: column;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__left {
+    order: 2;
+    margin-left: 62px;
+  }
+  .footer__right {
+    order: 1;
+    margin: 43px 113px;
   }
 }
